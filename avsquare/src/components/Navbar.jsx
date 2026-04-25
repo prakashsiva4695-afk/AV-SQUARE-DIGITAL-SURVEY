@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { useTheme } from '../context/ThemeContext';
 import './Navbar.css';
 import logo from "../assets/images/final.png"
-import darklogo from "../assets/images/logo.png"
+// import darklogo from "../assets/images/logo.png"
 
 
 const navLinks = [
