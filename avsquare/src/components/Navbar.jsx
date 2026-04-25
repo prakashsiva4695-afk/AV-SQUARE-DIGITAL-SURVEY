@@ -35,7 +35,7 @@ export default function Navbar() {
           <span className="navbar__logo-av">AV²</span>
           <span className="navbar__logo-text">SQUARE<br /><em>DIGITAL SURVEY</em></span>
         </Link> */}
-        <img src={logo} className='img-fluid logoimage'/>
+        <img src={logo} alt='logo' className='img-fluid logoimage'/>
 
           {/* {theme === 'light' ? (
         <img src={logo} className='img-fluid logoimage'/>
