@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTheme } from '../context/ThemeContext';
 import './Navbar.css';
+import logo from "../assets/images/final.png"
+import darklogo from "../assets/images/logo.png"
+
 
 const navLinks = [
   { to: '/', label: 'Home' },
@@ -28,10 +31,18 @@ export default function Navbar() {
   return (
     <nav className={`navbar ${scrolled ? 'navbar--scrolled' : ''} ${menuOpen ? 'navbar--open' : ''}`}>
       <div className="navbar__inner container">
-        <Link to="/" className="navbar__logo">
+        {/* <Link to="/" className="navbar__logo">
           <span className="navbar__logo-av">AV²</span>
           <span className="navbar__logo-text">SQUARE<br /><em>DIGITAL SURVEY</em></span>
-        </Link>
+        </Link> */}
+        <img src={logo} className='img-fluid logoimage'/>
+
+          {/* {theme === 'light' ? (
+        <img src={logo} className='img-fluid logoimage'/>
+      ):(
+        <img src={darklogo} className='img-fluid logoimage'/>
+
+        )} */}
 
         <ul className="navbar__links">
           {navLinks.map(l => (
